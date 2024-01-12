@@ -1,1 +1,2 @@
 RGB_MATRIX_ENABLE = no
+COMBO_ENABLE = yes

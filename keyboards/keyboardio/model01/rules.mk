@@ -10,8 +10,7 @@ NKRO_ENABLE = no            # Enable N-Key Rollover
 
 CUSTOM_MATRIX = yes
 I2C_DRIVER_REQUIRED = yes
-SRC += leds.c \
-	   matrix.c
+SRC += matrix.c
 
 # You can set RGB_MATRIX_ENABLE = no in your rules.mk to disable this and save the Flash
 RGB_MATRIX_ENABLE = yes # Enable RGB matrix effects.

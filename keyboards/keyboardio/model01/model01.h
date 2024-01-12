@@ -24,6 +24,8 @@
 #define LEFT            0
 #define RIGHT           1
 
+#ifdef RGB_MATRIX_ENABLE
 #include "leds.h"
+#endif
 
 /* vim: set ts=2 sw=2 et: */

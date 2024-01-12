@@ -19,7 +19,9 @@
 #include "model01.h"
 
 void matrix_init_kb(void) {
+  #ifdef RGB_MATRIX_ENABLE
   /* the bootloader can leave LEDs on, so */
   set_all_leds_to(0, 0, 0);
+  #endif
   matrix_init_user();
 }

@@ -19,6 +19,7 @@
 enum {
   DEF = 0,
   FUN,
+  SYM,
 };
 
 
@@ -27,7 +28,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   QK_BOOT, KC_1        , KC_2        , KC_3        , KC_4        , _______     ,                   _______        , KC_7        , KC_8        , KC_9        , KC_0        , _______,
   KC_A   , KC_J        , KC_G        , KC_M        , KC_P        , KC_V        , _______, _______, S(KC_3)        , KC_DOT      , KC_SLSH     , S(KC_QUOT)  , KC_QUOT     , KC_A   ,
   KC_A   , LALT_T(KC_C), LGUI_T(KC_S), LSFT_T(KC_N), LCTL_T(KC_T), HYPR_T(KC_K), _______, _______, HYPR_T(KC_COMM), RCTL_T(KC_A), RSFT_T(KC_E), RGUI_T(KC_I), RALT_T(KC_H), KC_A   ,
-  _______, KC_X        , KC_F        , KC_L        , KC_D        , KC_W        , _______, _______, KC_MINS        , KC_U        , KC_O        , KC_Y        , KC_B        , _______,
+  _______, KC_X        , KC_F        , KC_L        , KC_D        , KC_W        , MO(SYM), MO(SYM), KC_MINS        , KC_U        , KC_O        , KC_Y        , KC_B        , _______,
                                                         KC_R   ,                                       KC_ENT ,
                                                            KC_BSPC,                                 KC_SPC ,
                                                               KC_LGUI,                           KC_ESC ,
@@ -41,6 +42,17 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   KC_END , KC_PSCR, KC_INS , _______, KC_BTN2, _______, _______,    _______, KC_MUTE, KC_VOLD, KC_VOLU, _______, KC_BSLS, KC_PIPE,
                                          _______,                                 _______,
                                             KC_DEL ,                           KC_ENT ,
+                                               _______,                     _______,
+                                                  _______,               _______,
+                                      _______,                                        _______
+  ),
+[SYM] = LAYOUT(
+  _______, _______, _______, _______, _______, _______,                      _______, _______, _______, _______, _______, _______,
+  _______, _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______, _______, _______,
+  _______, _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______, _______, _______,
+  _______, _______, _______, _______, _______, _______, _______,    _______, _______, _______, _______, _______, _______, _______,
+                                         _______,                                 _______,
+                                            _______,                           _______,
                                                _______,                     _______,
                                                   _______,               _______,
                                       _______,                                        _______

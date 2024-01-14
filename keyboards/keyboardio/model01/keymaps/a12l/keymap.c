@@ -73,8 +73,19 @@ LAYOUT(
   )
 */
 
-#ifdef COMBO_ENABLE
 /* CKC: Custom Key Code */
+enum
+combos {
+  WX2Z,
+  XG2QU,
+  TN2TH,
+  CT2CH,
+  SN2SH,
+  WM2WH,
+  GM2GH,
+  FD2PH
+};
+
 enum
 custom_keycodes {
   CKC_QU = SAFE_RANGE,
@@ -89,6 +100,7 @@ custom_keycodes {
 bool
 process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
+    /* Defining my custom keycodes */
     case CKC_QU:
       if (record->event.pressed) {
           tap_code16(KC_Q);
@@ -161,15 +173,14 @@ fd_combo[] = {KC_F, KC_D, COMBO_END};
 
 combo_t
 key_combos[] = {
-  COMBO(wx_combo, KC_Z),
-  COMBO(xg_combo, CKC_QU),
-  COMBO(tn_combo, CKC_TH),
-  COMBO(ct_combo, CKC_CH),
-  COMBO(sn_combo, CKC_SH),
-  COMBO(wm_combo, CKC_WH),
-  COMBO(gm_combo, CKC_GH),
-  COMBO(fd_combo, CKC_PH),
+  [WX2Z] = COMBO(wx_combo, KC_Z),
+  [XG2QU] = COMBO(xg_combo, CKC_QU),
+  [TN2TH] = COMBO(tn_combo, CKC_TH),
+  [CT2CH] = COMBO(ct_combo, CKC_CH),
+  [SN2SH] = COMBO(sn_combo, CKC_SH),
+  [WM2WH] = COMBO(wm_combo, CKC_WH),
+  [GM2GH] = COMBO(gm_combo, CKC_GH),
+  [FD2PH] = COMBO(fd_combo, CKC_PH),
 };
-#endif
 
 /* vim: set ts=2 sw=2 et: */

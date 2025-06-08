@@ -2,19 +2,38 @@
 
 /* layer constants */
 enum {
-  BASE = 0,
-  FUN,
+  ALPHA = 0,
+  US_ALPHA,
+  BETA,
+  GAMMA,
+  US_GAMMA,
+  DELTA,
+  EPSILON,
+  ZETA,
+  US_ZETA,
+  ETA,
   MACRO,
-  MEDIA,
-  MOUSE,
-  NAV,
-  NUM,
-  SYM,
+  /* THETA,
+  IOTA,
+  KAPPA,
+  LAMBDA,
+  MU,
+  NU,
+  XI,
+  OMICRON,
+  PI,
+  RHO,
+  SIGMA,
+  TAU, */
+  UPSILON,
+  PHI,
+  CHI,
+  PSI,
+  OMEGA
 };
 
 enum
 custom_keycodes {
-    CKC_SKIM = SAFE_RANGE
-    CKC_LAPCE,
+    CKC_SKIM = SAFE_RANGE,
     CKC_CD,
 };

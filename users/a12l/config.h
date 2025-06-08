@@ -1,5 +1,7 @@
 #pragma once
 
+#define LAYER_STATE_32BIT
+
 #define PERMISSIVE_HOLD
 
 #define QUICK_TAP_TERM 0

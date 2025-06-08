@@ -7,9 +7,9 @@ combos {
 
 /* */
 const uint16_t PROGMEM
-    ai_combo[] = {LGUI_T(SE_A), LALT_T(SE_I), COMBO_END},
-    ae_combo[] = {LGUI_T(SE_A), RSFT_T(SE_E), COMBO_END},
-    oe_combo[] = {RGUI_T(SE_O), RSFT_T(SE_E), COMBO_END};
+    ai_combo[] = {LGUI_T(KC_A), LALT_T(KC_I), COMBO_END},
+    ae_combo[] = {LGUI_T(KC_A), RSFT_T(KC_E), COMBO_END},
+    oe_combo[] = {RGUI_T(KC_O), RSFT_T(KC_E), COMBO_END};
 
 /*  */
 combo_t
